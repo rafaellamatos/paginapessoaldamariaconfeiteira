@@ -1,17 +1,232 @@
+/*Google Fonts: Poppins
+------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/*Estrutura do site
+------------------------------------*/
+*{
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
 body{
-    background-color: #FCF9BE;
+    background: #FCF9BE;
     font-family: 'Poppins', sans-serif;
 }
 
-hr{
-    border-color: #FFDCA9;
-    border-style: dotted none none;
-    border-width: 5px;
-    width: 5%;
+/*Topo
+------------------------------------*/
+header{
+    background-color: #FAAB78;
+    height: 21vh;
+    position: sticky;
+    top: 0;
+    display: flex;
 }
 
-h1, h3{
-    color: #C58940;
+div.logo{
+    margin-left: 15%;
+    margin-right: 10%;
 }
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left:19%;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+/*Links - Geral
+------------------------------------*/
+a:link, a:active, a:visited{
+    color: #FCF9BE;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+a:hover{
+    color: #E8F3D6;
+}
+
+/*Conteúdo
+------------------------------------*/
+.conteudo{
+    margin-top: 50px;
+    width: 70%;
+    margin: auto;
+    color: #DF448E;
+}
+
+.conteudo h2{
+    margin-top: 30px;
+    text-align: center;
+    font-weight: 500;
+}
+
+/*Conteúdo - cards
+------------------------------------*/
+.cards{
+    display: flex;
+    margin-top: 50px;
+}
+
+.cards img{
+    height: 40vh;
+}
+
+.conteudo-card{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.img-card{
+    text-align: center;
+}
+
+.texto-card{
+    margin-left: 30px;
+    width: 85%;
+    text-align: justify;
+}
+
+.botao-card{
+    text-align: center;
+}
+
+.botao-card a{
+    text-transform: uppercase;
+    margin-top: 15px;
+    background: #FAAB78;
+    border: 1px solid #FAAB78;
+    border-radius: 2px;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    transition: all .3s ease-in-out;
+}
+
+.botao-card a:hover{
+    background: #E8F3D6;
+    border: 1px solid #E8F3D6;
+    color: #ff5e64;
+}
+
+/*Conteúdo - Loja física
+------------------------------------*/
+.loja-fisica h2{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.localizacao{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.localizacao img{
+    width: 52%;
+    margin-right: 15px;
+}
+
+.localizacao iframe{
+    margin-left: 15px;
+}
+
+/*Conteúdo - Sobre mim
+------------------------------------*/
+.sobre-mim{
+    margin-top: 50px;
+}
+
+.sobre-mim h2{
+    margin-bottom: 30px;
+}
+
+.sobre-mim-foto-texto{
+    display: flex;
+}
+
+.sobre-mim-foto-texto img{
+    width: 50%;
+    margin-right: 15px;
+}
+
+.sobre-mim-foto-texto p{
+    margin-left: 15px;
+    line-height: 2rem;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+/*Conteúdo - newsletter
+------------------------------------*/
+.newsletter{
+    margin-top: 50px;
+    height: 20vh;
+    background-color: #DF448E;
+    color: #FCF9BE;
+    text-align: center;
+}
+
+.newsletter h2{
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding-top: 15px;
+}
+
+.newsletter form{
+    margin-top: 20px;
+}
+
+.newsletter form .form-input{
+padding: 10.5px;
+}
+
+.newsletter form .btn-submit{
+    background: #FAAB78;
+    border: 1px solid #FAAB78;
+    color: #fff;
+    padding: 9px 14px;
+    transition: all .3s ease-in-out;
+}
+
+.newsletter form .btn-submit:hover{
+    background: #E8F3D6;
+    border: 1px solid #E8F3D6;
+    color: #ff5e64;
+}
+
+/*Rodapé
+------------------------------------*/
+footer{
+    color: #DF448E;
+    font-weight: 500;
+    padding: 25px;
+    text-align: center;
+}
+
+
+
+
+
+
+
